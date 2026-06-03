@@ -437,6 +437,7 @@ section { padding: 5rem 1.5rem; }
 .port-preview-steel { background: linear-gradient(135deg, #1a2a1a 0%, #2d4a2d 100%); }
 .port-preview-clothes { background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); }
 .port-preview-cardiology { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+.port-preview-waterpark { background: linear-gradient(135deg, #0a2a4a 0%, #0d5c8a 60%, #0891b2 100%); }
 
 .port-preview-label {
   font-family: 'Cormorant Garamond', serif;
@@ -1193,12 +1194,34 @@ footer {
         </div>
       </div>
 
+      <!-- Waterpark -->
+      <div class="port-card">
+        <div class="port-preview port-preview-waterpark">
+          <div class="port-tag">Demo</div>
+          <div class="port-preview-label">Waterpark &<br>Ticketing Website</div>
+        </div>
+        <div class="port-info">
+          <div class="port-name">Infineo Waterparks</div>
+          <div class="port-desc">Premium waterpark website with online ticket booking, QR-code passes, attraction showcase, and hidden admin panel.</div>
+          <div class="port-features">
+            <span class="port-feat">Ticket Booking</span>
+            <span class="port-feat">QR Code Pass</span>
+            <span class="port-feat">Admin Panel</span>
+            <span class="port-feat">PDF Generation</span>
+          </div>
+          <div class="port-actions">
+            <a href="https://infineodevs.github.io/Infineo-Waterparks/" target="_blank" class="port-btn">Live Demo →</a>
+            <button class="port-btn-outline" onclick="openTutorial('waterpark')">How to Use</button>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- Clients section placeholder -->
     <div class="coming-soon" style="margin-top:3rem;">
       <p style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem;">Our Clients</p>
-      <p>Client portfolio coming soon. <a href="#contact" style="color:var(--navy);font-weight:600;">Be our client →</a></p>
+      <p>This content will be available soon. <a href="#contact" style="color:var(--navy);font-weight:600;">Be our client →</a></p>
     </div>
   </div>
 </section>
@@ -1213,7 +1236,7 @@ footer {
     <div class="about-grid">
       <div>
         <div class="about-stat">
-          <div class="about-stat-num">3+</div>
+          <div class="about-stat-num">4+</div>
           <div class="about-stat-label">Demo Projects Built</div>
         </div>
         <div class="about-stat">
@@ -1515,6 +1538,18 @@ const tutorials = {
     ],
     creds: null,
     note: "This is a frontend demo for a cardiology clinic. No real appointments are booked."
+  },
+  waterpark: {
+    title: "How to Use — AquaVerse Waterpark",
+    steps: [
+      { n:1, text: "Open the demo by clicking <strong>Live Demo →</strong>. The site will open in a new tab." },
+      { n:2, text: "Browse attractions, check ticket prices, and select ticket types (Adult / Child / Group)." },
+      { n:3, text: "Complete the booking flow — you'll receive a <strong>QR-code ticket pass</strong> with a downloadable PDF." },
+      { n:4, text: "To access the <strong>Admin Panel</strong> — tap the <strong>logo 8 times rapidly</strong>. A login screen will appear." },
+      { n:5, text: "Enter the demo credentials:" },
+    ],
+    creds: "Username: Infineo\nPassword: Infineo123",
+    note: "This is a frontend demo for a waterpark. No real tickets or payments are processed."
   }
 };
 
